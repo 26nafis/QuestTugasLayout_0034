@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="card_0_bg">#666060</color>
     <color name="card_1_bg">#7B3FE4</color>
+    <color name="card_2_bg">#2600FF</color>
 </resources>
