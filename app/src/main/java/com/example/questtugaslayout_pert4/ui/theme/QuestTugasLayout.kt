@@ -62,6 +62,8 @@ fun CardMahasiswa(
                 modifier = Modifier.size(70.dp)
             )
 
+            Spacer(modifier = Modifier.width(10.dp))
+
         }
     }
 }
