@@ -95,3 +95,72 @@ fun CardMahasiswa(
     }
 }
 
+@Composable
+fun ActivitasPertama(
+    modifier: Modifier = Modifier
+) {
+
+    Box(
+        modifier = modifier.fillMaxSize()
+    ) {
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp),
+
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+
+            Spacer(modifier = Modifier.height(70.dp))
+
+            Text(
+                text = stringResource(R.string.prodi),
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold
+            )
+
+            Text(
+                text = stringResource(R.string.univ),
+                fontSize = 16.sp
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            CardMahasiswa(
+                nama = stringResource(R.string.nama1),
+                hp = stringResource(R.string.hp1),
+                alamat = stringResource(R.string.alamat1),
+                warna = colorResource(id = R.color.card_0_bg)
+            )
+
+            CardMahasiswa(
+                nama = stringResource(R.string.nama2),
+                hp = stringResource(R.string.hp2),
+                alamat = stringResource(R.string.alamat2),
+                warna = colorResource(id = R.color.card_1_bg)
+            )
+
+            CardMahasiswa(
+                nama = stringResource(R.string.nama3),
+                hp = stringResource(R.string.hp3),
+                alamat = stringResource(R.string.alamat3),
+                warna = colorResource(id = R.color.card_2_bg)
+            )
+
+            CardMahasiswa(
+                nama = stringResource(R.string.nama4),
+                hp = stringResource(R.string.hp4),
+                alamat = stringResource(R.string.alamat4),
+                warna = colorResource(id = R.color.card_3_bg)
+            )
+        }
+
+        Text(
+            text = stringResource(R.string.copy),
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 20.dp)
+        )
+    }
+}
