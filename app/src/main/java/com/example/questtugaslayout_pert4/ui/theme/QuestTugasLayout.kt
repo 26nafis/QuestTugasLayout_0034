@@ -75,6 +75,11 @@ fun CardMahasiswa(
                     color = colorResource(id = R.color.white_custom)
                 )
 
+                Text(
+                    text = hp,
+                    color = colorResource(id = R.color.cyan_custom)
+                )
+
 
             }
         }
