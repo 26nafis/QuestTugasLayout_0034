@@ -80,8 +80,13 @@ fun CardMahasiswa(
                     color = colorResource(id = R.color.cyan_custom)
                 )
 
-
+                Text(
+                    text = alamat,
+                    color = colorResource(id = R.color.yellow_custom)
+                )
             }
+
+
         }
     }
 }
