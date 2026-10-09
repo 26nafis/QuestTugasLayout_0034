@@ -86,7 +86,11 @@ fun CardMahasiswa(
                 )
             }
 
-
+            Image(
+                painter = painterResource(id = R.drawable.logo),
+                contentDescription = null,
+                modifier = Modifier.size(70.dp)
+            )
         }
     }
 }
